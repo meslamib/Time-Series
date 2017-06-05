@@ -11,3 +11,6 @@ df.set_index('Date', inplace=True)
 # Re-plot the DataFrame to see that the axis is now datetime aware!
 df.plot()
 plt.show()
+
+# Alternative way
+pd.read_csv('file.csv', parse_dates=True, index_col='Date')
